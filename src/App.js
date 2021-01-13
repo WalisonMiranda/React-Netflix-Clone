@@ -4,6 +4,7 @@ import Tmdb from './api/Tmdb';
 import MovieRow from './components/MovieRow/index';
 import FeaturedMovie from './components/FeaturedMovie/index';
 import Header from './components/Header/index';
+import loading from './img/Netflix_LoadTime.gif';
 
 export default () => {
 
@@ -64,7 +65,7 @@ export default () => {
       </footer>
       {movieList.length <= 0 &&
         <div className="loading">
-          <img src="https://www.filmelier.com/pt/br/news/wp-content/uploads/2020/03/Netflix_LoadTime-scaled.gif" alt="Carregando"></img>
+          <img src={loading} alt="Carregando"></img>
         </div>
       }
     </div>
